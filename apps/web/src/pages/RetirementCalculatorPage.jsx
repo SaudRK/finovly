@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Target, User, Users, DollarSign, Percent, Calendar } from 'lucide-react';
+import { Target, User, Users, DollarSign, Percent, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card.jsx';
 import { Label } from '@/components/ui/label.jsx';
 import { Input } from '@/components/ui/input.jsx';
 import { Button } from '@/components/ui/button.jsx';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 
@@ -63,7 +64,7 @@ function RetirementCalculatorPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org",
-          "@type":"WebPage",
+          "@type":"SoftwareApplication","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
           "name":"Retirement Calculator - Finovly",
           "url":"https://finovly.com/retirement-calculator",
           "description":"Plan for your retirement and see if you are on track with our free retirement calculator."
@@ -75,9 +76,9 @@ function RetirementCalculatorPage() {
 
         <main className="flex-1 py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <Link to="/calculators" className="inline-flex items-center text-[hsl(var(--accent))] font-medium hover:underline mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Back to Calculators
-            </Link>
+            
+
+            <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'Retirement' }]} />
 
             <div className="mb-10">
               <h1 className="text-[36px] md:text-[44px] font-extrabold text-foreground mb-4 tracking-tight">

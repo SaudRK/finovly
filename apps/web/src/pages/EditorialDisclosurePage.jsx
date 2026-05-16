@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,7 @@ function EditorialDisclosurePage() {
         <Header />
         <main className="flex-1 py-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate">
+            <Breadcrumb items={[{ label: 'Editorial Disclosure' }]} />
             <h1 className="text-4xl font-bold mb-6">Editorial & Advertiser Disclosure</h1>
             <p>Transparency is core to our mission at SmartMoneyHub.</p>
             <h2 className="text-2xl font-semibold mt-8 mb-4">Affiliate Relationships</h2>

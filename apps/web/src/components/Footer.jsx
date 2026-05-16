@@ -39,7 +39,7 @@ function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-14">
           <div className="col-span-2 md:col-span-1">
             <Link to="/">
-              <img src="https://horizons-cdn.hostinger.com/ddb1bf61-ad7f-403c-98d4-7d62beea60b8/61f6fa1a7da666cb7c29b5ba0430e28b.png" alt="Finovly" className="h-7 w-auto mb-4" loading="lazy" />
+              <img src="/finovly-logo-dark.svg" alt="Finovly – Free Financial Calculators" className="h-7 w-auto mb-4" loading="lazy" />
             </Link>
             <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">
               Free financial tools built with precision. No accounts. No data collection.

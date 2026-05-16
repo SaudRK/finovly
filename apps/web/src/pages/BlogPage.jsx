@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BlogCard from '@/components/BlogCard.jsx';
@@ -58,6 +59,8 @@ function BlogPage() {
         <main className="flex-1 py-12 px-4">
           <div className="max-w-7xl mx-auto">
             
+            <Breadcrumb items={[{ label: 'Blog' }]} />
+
             <div className="mb-12 text-center md:text-left">
               <h1 className="text-[40px] md:text-[48px] font-extrabold text-foreground mb-4 tracking-tight">Financial Guides</h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
@@ -123,7 +126,7 @@ function BlogPage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Your email address" 
-                      className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground/80 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#3260A8]"
+                      className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground/80 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[hsl(var(--accent))]"
                       required
                     />
                     <button type="submit" className="w-full bg-primary text-card-foreground hover:bg-[hsl(var(--primary-hover))] transition-colors font-medium rounded-md py-3 shadow-sm">
@@ -138,7 +141,7 @@ function BlogPage() {
                   <div className="space-y-6">
                     {popularPosts.map((post, index) => (
                       <Link key={post.id} to={`/blog/${post.id}`} className="flex gap-4 group cursor-pointer">
-                        <div className="text-3xl font-extrabold text-[#EEF4FF] group-hover:text-[#D6E4F5] transition-colors">
+                        <div className="text-3xl font-extrabold text-muted group-hover:text-border transition-colors">
                           0{index + 1}
                         </div>
                         <div>

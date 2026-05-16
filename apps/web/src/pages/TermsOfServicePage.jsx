@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 
@@ -23,10 +24,11 @@ function TermsOfServicePage() {
 
         <main className="flex-1 py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto bg-card p-8 md:p-12 rounded-2xl shadow-sm border border-border">
+            <Breadcrumb items={[{ label: 'Terms' }]} />
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Terms of Service</h1>
             <p className="text-sm text-muted-foreground mb-8 font-medium">Last Updated: May 4, 2026</p>
 
-            <div className="space-y-8 text-[#334155] leading-relaxed">
+            <div className="space-y-8 text-muted-foreground leading-relaxed">
               <section>
                 <h2 className="text-xl font-semibold text-foreground mb-3">1. Introduction and Acceptance of Terms</h2>
                 <p>

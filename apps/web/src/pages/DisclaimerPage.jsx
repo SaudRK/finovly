@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,7 @@ function DisclaimerPage() {
         <Header />
         <main className="flex-1 py-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate">
+            <Breadcrumb items={[{ label: 'Disclaimer' }]} />
             <h1 className="text-4xl font-bold mb-6">Disclaimer</h1>
             <div className="bg-destructive/10 border border-destructive/20 p-4 rounded-lg mb-8">
               <p className="text-destructive font-semibold m-0">Not Financial Advice</p>

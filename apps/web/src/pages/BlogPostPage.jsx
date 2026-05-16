@@ -50,7 +50,7 @@ function BlogPostPage() {
       "name": "Finovly",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://horizons-cdn.hostinger.com/ddb1bf61-ad7f-403c-98d4-7d62beea60b8/61f6fa1a7da666cb7c29b5ba0430e28b.png"
+        "url": "https://finovly.com/finovly-icon.svg"
       }
     },
     "description": post.excerpt
@@ -202,7 +202,7 @@ function BlogPostPage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Your email address" 
-                      className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground/80 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#3260A8]"
+                      className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground/80 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[hsl(var(--accent))]"
                       required
                     />
                     <button type="submit" className="w-full bg-primary text-card-foreground hover:bg-[hsl(var(--primary-hover))] transition-colors font-medium rounded-md py-3 shadow-sm">

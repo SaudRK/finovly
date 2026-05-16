@@ -122,7 +122,13 @@ function HomePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org","@type":"Organization","name":"Finovly","url":"https://finovly.com",
-          "description":"Free financial calculators and expert guides for smarter money decisions."
+          "logo":"https://finovly.com/finovly-icon.svg",
+          "description":"Free financial calculators and expert guides for smarter money decisions.",
+          "contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}
+        }`}</script>
+        <script type="application/ld+json">{`{
+          "@context":"https://schema.org","@type":"WebSite","name":"Finovly","url":"https://finovly.com",
+          "potentialAction":{"@type":"SearchAction","target":"https://finovly.com/calculators?q={search_term_string}","query-input":"required name=search_term_string"}
         }`}</script>
       </Helmet>
 

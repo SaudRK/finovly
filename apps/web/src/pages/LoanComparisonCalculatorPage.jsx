@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Scale, DollarSign, Percent, Calendar } from 'lucide-react';
+import { Scale, DollarSign, Percent, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card.jsx';
 import { Label } from '@/components/ui/label.jsx';
 import { Input } from '@/components/ui/input.jsx';
 import { Button } from '@/components/ui/button.jsx';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 
@@ -81,9 +82,9 @@ function LoanComparisonCalculatorPage() {
 
         <main className="flex-1 py-12 px-4">
           <div className="max-w-5xl mx-auto">
-            <Link to="/calculators" className="inline-flex items-center text-[hsl(var(--accent))] font-medium hover:underline mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Back to Calculators
-            </Link>
+            
+
+            <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'Loan Comparison' }]} />
 
             <div className="mb-10">
               <h1 className="text-[36px] md:text-[44px] font-extrabold text-foreground mb-4 tracking-tight">
@@ -204,7 +205,7 @@ function LoanComparisonCalculatorPage() {
                 {results && (
                   <div className="mt-8 rounded-xl overflow-hidden border border-border">
                     <table className="w-full text-left bg-card">
-                      <thead className="bg-[#1B3E6F] text-card-foreground">
+                      <thead className="bg-primary text-primary-foreground">
                         <tr>
                           <th className="p-4 font-bold">Metric</th>
                           <th className="p-4 font-bold border-l border-white/20">Option A</th>

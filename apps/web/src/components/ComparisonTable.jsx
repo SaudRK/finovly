@@ -21,7 +21,7 @@ function ComparisonTable({ products }) {
                   <div>
                     <div className="font-bold text-[hsl(var(--foreground))] text-base">{product.name}</div>
                     {product.bestPick && (
-                      <div className="inline-flex items-center gap-1 mt-1 bg-[#EEF4FF] text-primary text-xs font-semibold px-2 py-0.5 rounded-full">
+                      <div className="inline-flex items-center gap-1 mt-1 bg-muted text-primary text-xs font-semibold px-2 py-0.5 rounded-full">
                         <ShieldCheck className="w-3 h-3" /> Best Pick
                       </div>
                     )}

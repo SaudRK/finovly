@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ComparisonTable from '@/components/ComparisonTable.jsx';
@@ -48,6 +49,8 @@ function ComparePage() {
         <main className="flex-1 py-12 px-4">
           <div className="max-w-5xl mx-auto">
             
+            <Breadcrumb items={[{ label: 'Compare' }]} />
+
             <div className="mb-12">
               <h1 className="text-[40px] font-extrabold text-foreground mb-4">Compare Products</h1>
               <p className="text-xl text-muted-foreground">

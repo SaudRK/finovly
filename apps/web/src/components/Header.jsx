@@ -37,7 +37,6 @@ function Header() {
 
   const navLinks = [
     { name: 'Learn', path: '/blog' },
-    { name: 'Compare', path: '/compare' },
     { name: 'About', path: '/about' },
   ];
 
@@ -49,7 +48,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           <Link to="/" className="flex items-center" aria-label="Finovly Home">
-            <img src="https://horizons-cdn.hostinger.com/ddb1bf61-ad7f-403c-98d4-7d62beea60b8/c52d3817719d3ef4d9d7bc23f603ed66.png" alt="Finovly Logo" className="h-7 w-auto" loading="eager" width="100" height="28" />
+            <img src="/finovly-logo-dark.svg" alt="Finovly – Free Financial Calculators and Money Tools" className="h-7 w-auto" loading="eager" width="120" height="28" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-0.5" aria-label="Main navigation">

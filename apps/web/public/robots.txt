@@ -1,3 +1,24 @@
+# Finovly Robots.txt
+# Allow all search engine crawlers
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
 Sitemap: https://finovly.com/sitemap.xml
+
+# Crawl-delay (optional, be generous)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
