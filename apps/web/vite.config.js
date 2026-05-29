@@ -14,6 +14,42 @@ const allDeps = Object.keys(pkg.dependencies || {});
 
 const isDev = process.env.NODE_ENV !== 'production';
 
+// ── All routes to pre-render at build time ──
+const prerenderRoutes = [
+	'/',
+	'/calculators',
+	'/compound-interest-calculator',
+	'/mortgage-calculator',
+	'/loan-comparison-calculator',
+	'/salary-tax-calculator',
+	'/401k-calculator',
+	'/retirement-calculator',
+	'/investment-calculator',
+	'/credit-card-payoff-calculator',
+	'/auto-loan-calculator',
+	'/blog',
+	'/blog/start-investing-100',
+	'/blog/building-emergency-fund',
+	'/blog/understanding-credit-scores',
+	'/blog/first-time-homebuyer',
+	'/blog/top-5-side-hustles',
+	'/blog/retirement-planning-30s',
+	'/blog/budgeting-strategies',
+	'/blog/truth-about-credit-card-debt',
+	'/blog/real-estate-investment',
+	'/blog/passive-income-streams',
+	'/blog/tax-advantaged-accounts',
+	'/blog/negotiate-your-salary',
+	'/about',
+	'/contact',
+	'/privacy',
+	'/terms',
+	'/compare',
+	'/disclaimer',
+	'/editorial-disclosure',
+];
+
+// ── Horizons error handlers (DEV ONLY) ──
 const configHorizonsViteErrorHandler = `
 const observer = new MutationObserver((mutations) => {
 	for (const mutation of mutations) {
@@ -181,7 +217,7 @@ window.fetch = function(...args) {
 			return response;
 		})
 		.catch(error => {
-			if (!url.match(/\.html?$/i)) {
+			if (!url.match(/\\.html?$/i)) {
 				console.error(error);
 			}
 
@@ -215,41 +251,47 @@ if (window.navigation && window.self !== window.top) {
 }
 `;
 
+// ── Only inject Horizons debug scripts during DEVELOPMENT ──
 const addTransformIndexHtml = {
 	name: 'add-transform-index-html',
 	transformIndexHtml(html) {
-		const tags = [
-			{
-				tag: 'script',
-				attrs: { type: 'module' },
-				children: configHorizonsRuntimeErrorHandler,
-				injectTo: 'head',
-			},
-			{
-				tag: 'script',
-				attrs: { type: 'module' },
-				children: configHorizonsViteErrorHandler,
-				injectTo: 'head',
-			},
-			{
-				tag: 'script',
-				attrs: { type: 'module' },
-				children: configHorizonsConsoleErrorHandler,
-				injectTo: 'head',
-			},
-			{
-				tag: 'script',
-				attrs: { type: 'module' },
-				children: configWindowFetchMonkeyPatch,
-				injectTo: 'head',
-			},
-			{
-				tag: 'script',
-				attrs: { type: 'module' },
-				children: configNavigationHandler,
-				injectTo: 'head',
-			},
-		];
+		const tags = [];
+
+		// Only inject Horizons debug/error handling scripts in development
+		if (isDev) {
+			tags.push(
+				{
+					tag: 'script',
+					attrs: { type: 'module' },
+					children: configHorizonsRuntimeErrorHandler,
+					injectTo: 'head',
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'module' },
+					children: configHorizonsViteErrorHandler,
+					injectTo: 'head',
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'module' },
+					children: configHorizonsConsoleErrorHandler,
+					injectTo: 'head',
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'module' },
+					children: configWindowFetchMonkeyPatch,
+					injectTo: 'head',
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'module' },
+					children: configNavigationHandler,
+					injectTo: 'head',
+				},
+			);
+		}
 
 		if (!isDev && process.env.TEMPLATE_BANNER_SCRIPT_URL && process.env.TEMPLATE_REDIRECT_URL) {
 			tags.push(
@@ -292,7 +334,7 @@ export default defineConfig({
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), selectionModePlugin(), iframeRouteRestorationPlugin(), pocketbaseAuthPlugin()] : []),
 		react(),
-		addTransformIndexHtml
+		addTransformIndexHtml,
 	],
 	server: {
 		port: 3000,

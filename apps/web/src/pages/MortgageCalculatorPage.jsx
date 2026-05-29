@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Home, DollarSign, Percent, Calendar, Share2, RotateCcw, TrendingUp, Scale, PiggyBank, BarChart3, CreditCard, ArrowUpRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx';
@@ -72,13 +72,15 @@ function MortgageCalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>Free Mortgage Calculator 2025 | Monthly Payment Estimator | Finovly</title>
+        <title>Free Mortgage Calculator 2026 | Monthly Payment Estimator | Finovly</title>
         <meta name="description" content="Calculate your monthly mortgage payment, total interest, and loan cost. Free mortgage calculator with real-time results. No sign-up required." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/mortgage-calculator" />
         <meta property="og:title" content="Free Mortgage Calculator | Finovly" />
         <meta property="og:url" content="https://finovly.com/mortgage-calculator" />
         <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org","@type":"SoftwareApplication","name":"Mortgage Calculator",
           "applicationCategory":"FinanceApplication","operatingSystem":"Web",

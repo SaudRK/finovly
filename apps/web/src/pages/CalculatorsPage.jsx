@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Calculator, Home, Scale, DollarSign, TrendingUp, BarChart3, CreditCard, Car, PiggyBank } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -37,6 +37,8 @@ function CalculatorsPage() {
         <meta property="og:title" content="Free Financial Calculators | Finovly" />
         <meta property="og:url" content="https://finovly.com/calculators" />
         <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","name":"Financial Calculators","url":"https://finovly.com/calculators"}`}</script>
       </Helmet>
 

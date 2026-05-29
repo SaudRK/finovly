@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 /**
  * Shared SEO head component. Ensures every page gets:
@@ -37,7 +37,7 @@ export default function SEOHead({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="finovly.com" />
+      <meta property="og:site_name" content="Finovly" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}

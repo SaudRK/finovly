@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Info, TrendingUp, Home, Scale, DollarSign, PiggyBank, BarChart3, CreditCard } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -30,13 +30,15 @@ function CompoundInterestCalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>Free Compound Interest Calculator 2025 | Finovly</title>
+        <title>Free Compound Interest Calculator 2026 | Finovly</title>
         <meta name="description" content="Calculate how investments grow over time with compound interest. Interactive sliders, real-time charts, and year-by-year breakdowns. Free, no sign-up." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/compound-interest-calculator" />
         <meta property="og:title" content="Free Compound Interest Calculator | Finovly" />
         <meta property="og:url" content="https://finovly.com/compound-interest-calculator" />
         <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org","@type":"SoftwareApplication","name":"Compound Interest Calculator",
           "applicationCategory":"FinanceApplication","operatingSystem":"Web",

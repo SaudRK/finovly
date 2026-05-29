@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Target, User, Users, DollarSign, Percent, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card.jsx';
@@ -62,6 +62,8 @@ function RetirementCalculatorPage() {
         <meta property="og:description" content="Plan for your retirement and see if you are on track with our free retirement calculator." />
         <meta property="og:url" content="https://finovly.com/retirement-calculator" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org",
           "@type":"SoftwareApplication","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},

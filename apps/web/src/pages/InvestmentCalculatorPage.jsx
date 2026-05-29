@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { TrendingUp, DollarSign, Percent, Calendar, Share2, RotateCcw, Home, Scale, PiggyBank } from 'lucide-react';
 import { Label } from '@/components/ui/label.jsx';
@@ -63,12 +63,14 @@ function InvestmentCalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>Free Investment Calculator 2025 | Portfolio Growth Simulator | Finovly</title>
+        <title>Free Investment Calculator 2026 | Portfolio Growth Simulator | Finovly</title>
         <meta name="description" content="Calculate potential investment returns with monthly contributions. Free investment calculator with real-time charts. No sign-up." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/investment-calculator" />
         <meta property="og:title" content="Free Investment Calculator | Finovly" />
         <meta property="og:url" content="https://finovly.com/investment-calculator" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Investment Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}`}</script>
       </Helmet>
 

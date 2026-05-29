@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Mail, MessageCircle, ShieldCheck } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -16,6 +16,8 @@ function ContactPage() {
         <link rel="canonical" href="https://finovly.com/contact" />
         <meta property="og:title" content="Contact Finovly" />
         <meta property="og:url" content="https://finovly.com/contact" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Finovly","url":"https://finovly.com/contact"}`}</script>
       </Helmet>
 

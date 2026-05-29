@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { CreditCard, DollarSign, Percent } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card.jsx';
@@ -64,6 +64,8 @@ function CreditCardPayoffCalculatorPage() {
         <meta property="og:description" content="Find out how long it will take to pay off your credit card debt with our free credit card payoff calculator." />
         <meta property="og:url" content="https://finovly.com/credit-card-payoff-calculator" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org",
           "@type":"SoftwareApplication","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},

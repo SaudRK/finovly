@@ -14,7 +14,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/manifest.json" />
 
-		<!-- Primary SEO -->
+		<!-- Default SEO (overridden per-page by react-helmet-async) -->
 		<title>Free Financial Calculators & Money Tools | Finovly</title>
 		<meta name="description" content="Free financial calculators for compound interest, mortgages, loans, investments, retirement, and taxes. Expert money guides trusted by 150K+ users monthly. No sign-up required." />
 		<meta name="author" content="Finovly" />
@@ -28,7 +28,7 @@
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="finovly.com" />
+		<meta property="og:site_name" content="Finovly" />
 		<meta property="og:title" content="Free Financial Calculators & Money Tools | Finovly" />
 		<meta property="og:description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more. Trusted by 150K+ users monthly." />
 		<meta property="og:url" content="https://finovly.com/" />
@@ -55,15 +55,37 @@
 
 		<!-- Structured Data -->
 		<script type="application/ld+json">
-			{"@context":"https://schema.org","@type":"Organization","name":"finovly.com","url":"https://finovly.com","logo":"https://finovly.com/finovly-icon.svg","description":"Free financial calculators and expert money guides.","contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}}
+			{"@context":"https://schema.org","@type":"Organization","name":"Finovly","url":"https://finovly.com","logo":"https://finovly.com/finovly-logo-dark.svg","description":"Free financial calculators and expert money guides for smarter money decisions.","sameAs":[],"contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}}
 		</script>
 		<script type="application/ld+json">
-			{"@context":"https://schema.org","@type":"WebSite","name":"finovly.com","url":"https://finovly.com","potentialAction":{"@type":"SearchAction","target":"https://finovly.com/calculators?q={search_term_string}","query-input":"required name=search_term_string"}}
+			{"@context":"https://schema.org","@type":"WebSite","name":"Finovly","url":"https://finovly.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://finovly.com/calculators?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 		</script>
 	</head>
 	<body>
 		<noscript>
-			<p>Finovly requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+			<div style="max-width:800px;margin:40px auto;padding:20px;font-family:system-ui,sans-serif;color:#e0e0e0;background:#0d0d0d;">
+				<h1>Finovly — Free Financial Calculators & Money Tools</h1>
+				<p>Finovly provides free, accurate financial calculators trusted by 150K+ monthly users. No sign-up required.</p>
+				<h2>Our Financial Calculators</h2>
+				<ul>
+					<li><a href="/compound-interest-calculator">Compound Interest Calculator</a> — Project wealth growth with compounding returns</li>
+					<li><a href="/mortgage-calculator">Mortgage Calculator</a> — Calculate monthly payments and total interest</li>
+					<li><a href="/loan-comparison-calculator">Loan Comparison Calculator</a> — Compare rates and terms side by side</li>
+					<li><a href="/salary-tax-calculator">Salary & Tax Calculator</a> — See your take-home pay after deductions</li>
+					<li><a href="/investment-calculator">Investment Calculator</a> — Simulate portfolio growth</li>
+					<li><a href="/retirement-calculator">Retirement Calculator</a> — Check if your savings rate meets your goal</li>
+					<li><a href="/401k-calculator">401(k) Calculator</a> — Model employer match and retirement projections</li>
+					<li><a href="/auto-loan-calculator">Auto Loan Calculator</a> — Calculate monthly car payments</li>
+					<li><a href="/credit-card-payoff-calculator">Credit Card Payoff Calculator</a> — Build a payoff strategy</li>
+				</ul>
+				<h2>Learn</h2>
+				<ul>
+					<li><a href="/blog">Financial Guides & Articles</a></li>
+					<li><a href="/about">About Finovly</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+				</ul>
+				<p>Please enable JavaScript for the best experience.</p>
+			</div>
 		</noscript>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>

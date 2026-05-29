@@ -1,6 +1,6 @@
 
 import React, { useRef, useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Calculator, Home, Scale, DollarSign, ChevronRight, TrendingUp, BarChart3, CreditCard, Car, PiggyBank, ArrowRight, ArrowUpRight, Shield, Zap, BookOpen, Star, MousePointer2 } from 'lucide-react';
@@ -120,6 +120,8 @@ function HomePage() {
         <meta property="og:description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more." />
         <meta property="og:url" content="https://finovly.com/" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org","@type":"Organization","name":"Finovly","url":"https://finovly.com",
           "logo":"https://finovly.com/finovly-icon.svg",

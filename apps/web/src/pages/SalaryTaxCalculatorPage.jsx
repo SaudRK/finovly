@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { DollarSign, Share2, RotateCcw, TrendingUp, Home, Scale, PiggyBank } from 'lucide-react';
 import { Label } from '@/components/ui/label.jsx';
@@ -68,12 +68,14 @@ function SalaryTaxCalculatorPage() {
   return (
     <>
       <Helmet>
-        <title>Free Salary & Tax Calculator 2025 | Take-Home Pay Estimator | Finovly</title>
+        <title>Free Salary & Tax Calculator 2026 | Take-Home Pay Estimator | Finovly</title>
         <meta name="description" content="Calculate your take-home pay after federal taxes and FICA deductions. Free salary calculator with real-time results. No sign-up required." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/salary-tax-calculator" />
         <meta property="og:title" content="Free Salary & Tax Calculator | Finovly" />
         <meta property="og:url" content="https://finovly.com/salary-tax-calculator" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Salary Tax Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}`}</script>
       </Helmet>
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Breadcrumb from '@/components/Breadcrumb.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';

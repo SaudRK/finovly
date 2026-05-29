@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb.jsx';

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -16,6 +16,8 @@ function AboutPage() {
         <link rel="canonical" href="https://finovly.com/about" />
         <meta property="og:title" content="About Finovly" />
         <meta property="og:url" content="https://finovly.com/about" />
+        <meta property="og:image" content="https://finovly.com/og-image.png" />
+        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"AboutPage","name":"About Finovly","url":"https://finovly.com/about"}`}</script>
       </Helmet>
 
