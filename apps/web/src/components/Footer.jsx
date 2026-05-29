@@ -23,7 +23,6 @@ function Footer() {
     ]},
     { title: 'Learn', links: [
       { name: 'Guides', path: '/blog' },
-      { name: 'Compare', path: '/compare' },
     ]},
     { title: 'Company', links: [
       { name: 'About', path: '/about' },

@@ -12,7 +12,7 @@ import { blogPosts } from '@/data/blogPosts.js';
 function BlogPostPage() {
   const { id } = useParams();
   const [email, setEmail] = useState('');
-  
+
   const post = blogPosts.find(p => p.id === id);
 
   if (!post) {
@@ -91,7 +91,7 @@ function BlogPostPage() {
 
         <main className="flex-1 py-8 px-4">
           <div className="max-w-7xl mx-auto">
-            
+
             {/* Breadcrumbs */}
             <nav className="flex items-center text-sm font-medium text-muted-foreground mb-8">
               <Link to="/" className="hover:text-[hsl(var(--accent))] transition-colors">Home</Link>
@@ -111,7 +111,7 @@ function BlogPostPage() {
                   <h1 className="text-[32px] md:text-[44px] font-extrabold text-foreground leading-tight mb-6 tracking-tight">
                     {post.title}
                   </h1>
-                  
+
                   <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground font-medium">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-[hsl(var(--accent))]">
@@ -131,9 +131,9 @@ function BlogPostPage() {
                 </div>
 
                 <div className="w-full h-[400px] md:h-[500px]">
-                  <img 
-                    src={post.featuredImage} 
-                    alt={post.title} 
+                  <img
+                    src={post.featuredImage}
+                    alt={post.title}
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
@@ -171,9 +171,9 @@ function BlogPostPage() {
                       {relatedPosts.map((relatedPost) => (
                         <Link key={relatedPost.id} to={`/blog/${relatedPost.id}`} className="flex gap-4 group">
                           <div className="w-24 h-20 rounded-lg overflow-hidden flex-shrink-0">
-                            <img 
-                              src={relatedPost.featuredImage} 
-                              alt={relatedPost.title} 
+                            <img
+                              src={relatedPost.featuredImage}
+                              alt={relatedPost.title}
                               loading="lazy"
                               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -197,11 +197,11 @@ function BlogPostPage() {
                     Get our best financial guides and tool updates delivered straight to your inbox.
                   </p>
                   <form className="space-y-4" onSubmit={handleSubscribe}>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Your email address" 
+                      placeholder="Your email address"
                       className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground/80 placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[hsl(var(--accent))]"
                       required
                     />
