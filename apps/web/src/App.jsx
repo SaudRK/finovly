@@ -4,15 +4,10 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import HomePage from './pages/HomePage.jsx';
 import CalculatorsPage from './pages/CalculatorsPage.jsx';
-import CompoundInterestCalculatorPage from './pages/CompoundInterestCalculatorPage.jsx';
-import MortgageCalculatorPage from './pages/MortgageCalculatorPage.jsx';
-import LoanComparisonCalculatorPage from './pages/LoanComparisonCalculatorPage.jsx';
-import SalaryTaxCalculatorPage from './pages/SalaryTaxCalculatorPage.jsx';
-import FourZeroOneKCalculatorPage from './pages/FourZeroOneKCalculatorPage.jsx';
-import RetirementCalculatorPage from './pages/RetirementCalculatorPage.jsx';
-import InvestmentCalculatorPage from './pages/InvestmentCalculatorPage.jsx';
-import CreditCardPayoffCalculatorPage from './pages/CreditCardPayoffCalculatorPage.jsx';
-import AutoLoanCalculatorPage from './pages/AutoLoanCalculatorPage.jsx';
+import SubstantialPresenceTestPage from './pages/SubstantialPresenceTestPage.jsx';
+import H1BTaxCalculatorPage from './pages/H1BTaxCalculatorPage.jsx';
+import F1OPTTaxCalculatorPage from './pages/F1OPTTaxCalculatorPage.jsx';
+import RemittanceFeeCalculatorPage from './pages/RemittanceFeeCalculatorPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
 import BlogPostPage from './pages/BlogPostPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
@@ -30,25 +25,20 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        
-        {/* Hub Page */}
+
+        {/* Calculators Hub */}
         <Route path="/calculators" element={<CalculatorsPage />} />
-        
-        {/* Dedicated Calculator Pages */}
-        <Route path="/compound-interest-calculator" element={<CompoundInterestCalculatorPage />} />
-        <Route path="/mortgage-calculator" element={<MortgageCalculatorPage />} />
-        <Route path="/loan-comparison-calculator" element={<LoanComparisonCalculatorPage />} />
-        <Route path="/salary-tax-calculator" element={<SalaryTaxCalculatorPage />} />
-        <Route path="/401k-calculator" element={<FourZeroOneKCalculatorPage />} />
-        <Route path="/retirement-calculator" element={<RetirementCalculatorPage />} />
-        <Route path="/investment-calculator" element={<InvestmentCalculatorPage />} />
-        <Route path="/credit-card-payoff-calculator" element={<CreditCardPayoffCalculatorPage />} />
-        <Route path="/auto-loan-calculator" element={<AutoLoanCalculatorPage />} />
-        
+
+        {/* Immigrant Finance Calculators */}
+        <Route path="/substantial-presence-test-calculator" element={<SubstantialPresenceTestPage />} />
+        <Route path="/h1b-tax-calculator" element={<H1BTaxCalculatorPage />} />
+        <Route path="/f1-opt-tax-calculator" element={<F1OPTTaxCalculatorPage />} />
+        <Route path="/remittance-fee-calculator" element={<RemittanceFeeCalculatorPage />} />
+
         {/* Blog Routes */}
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogPostPage />} />
-        
+
         {/* Legal & Info Routes */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -57,7 +47,7 @@ function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/editorial-disclosure" element={<EditorialDisclosurePage />} />
-        
+
         {/* Fallback 404 Route */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

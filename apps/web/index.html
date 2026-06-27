@@ -1,93 +1,76 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- Favicons -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.json" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- Default SEO (overridden per-page by react-helmet-async) -->
-		<title>Free Financial Calculators & Money Tools | Finovly</title>
-		<meta name="description" content="Free financial calculators for compound interest, mortgages, loans, investments, retirement, and taxes. Expert money guides trusted by 150K+ users monthly. No sign-up required." />
-		<meta name="author" content="Finovly" />
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-		<meta name="googlebot" content="index, follow" />
-		<link rel="canonical" href="https://finovly.com/" />
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/manifest.json" />
 
-		<!-- Theme -->
-		<meta name="theme-color" content="#0d0d0d" />
-		<meta name="color-scheme" content="dark" />
+	<!-- Default Title (replaced by Helmet on mount) -->
+	<title>Finovly</title>
 
-		<!-- Open Graph -->
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Finovly" />
-		<meta property="og:title" content="Free Financial Calculators & Money Tools | Finovly" />
-		<meta property="og:description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more. Trusted by 150K+ users monthly." />
-		<meta property="og:url" content="https://finovly.com/" />
-		<meta property="og:image" content="https://finovly.com/og-image.png" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:locale" content="en_US" />
+	<!-- Theme -->
+	<meta name="theme-color" content="#0d0d0d" />
+	<meta name="color-scheme" content="dark" />
 
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Free Financial Calculators & Money Tools | Finovly" />
-		<meta name="twitter:description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more." />
-		<meta name="twitter:image" content="https://finovly.com/og-image.png" />
+	<!-- Preconnect for performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-		<!-- Preconnect for performance -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<!-- AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6241578384709015"
+		crossorigin="anonymous"></script>
 
-		<!-- AdSense -->
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6241578384709015" crossorigin="anonymous"></script>
+	<!-- Ahrefs Analytics -->
+	<script src="https://analytics.ahrefs.com/analytics.js" data-key="lrXKKh+/54LiKjflHatDRg" async></script>
 
-		<!-- Ahrefs Analytics -->
-		<script src="https://analytics.ahrefs.com/analytics.js" data-key="lrXKKh+/54LiKjflHatDRg" async></script>
-
-		<!-- Structured Data -->
-		<script type="application/ld+json">
-			{"@context":"https://schema.org","@type":"Organization","name":"Finovly","url":"https://finovly.com","logo":"https://finovly.com/finovly-logo-dark.svg","description":"Free financial calculators and expert money guides for smarter money decisions.","sameAs":[],"contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}}
+	<!-- Structured Data: Organization -->
+	<script type="application/ld+json">
+		{"@context":"https://schema.org","@type":"Organization","name":"Finovly","alternateName":"Finovly.com","url":"https://finovly.com","logo":"https://finovly.com/finovly-logo-dark.svg","description":"Finovly provides free financial calculators for immigrants and visa holders in the United States, including the Substantial Presence Test, H1B Tax Estimator, F1 OPT Tax Calculator, and Remittance Fee Comparator.","foundingDate":"2025","knowsAbout":["Immigrant Finance","US Tax Residency","Substantial Presence Test","H1B Visa Taxes","F1 OPT Taxes","International Money Transfer","Remittance Fees","Expat Finance"],"sameAs":[],"contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}}
 		</script>
-		<script type="application/ld+json">
-			{"@context":"https://schema.org","@type":"WebSite","name":"Finovly","url":"https://finovly.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://finovly.com/calculators?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+	<script type="application/ld+json">
+		{"@context":"https://schema.org","@type":"WebSite","name":"Finovly","url":"https://finovly.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://finovly.com/calculators?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 		</script>
-	</head>
-	<body>
-		<noscript>
-			<div style="max-width:800px;margin:40px auto;padding:20px;font-family:system-ui,sans-serif;color:#e0e0e0;background:#0d0d0d;">
-				<h1>Finovly — Free Financial Calculators & Money Tools</h1>
-				<p>Finovly provides free, accurate financial calculators trusted by 150K+ monthly users. No sign-up required.</p>
-				<h2>Our Financial Calculators</h2>
-				<ul>
-					<li><a href="/compound-interest-calculator">Compound Interest Calculator</a> — Project wealth growth with compounding returns</li>
-					<li><a href="/mortgage-calculator">Mortgage Calculator</a> — Calculate monthly payments and total interest</li>
-					<li><a href="/loan-comparison-calculator">Loan Comparison Calculator</a> — Compare rates and terms side by side</li>
-					<li><a href="/salary-tax-calculator">Salary & Tax Calculator</a> — See your take-home pay after deductions</li>
-					<li><a href="/investment-calculator">Investment Calculator</a> — Simulate portfolio growth</li>
-					<li><a href="/retirement-calculator">Retirement Calculator</a> — Check if your savings rate meets your goal</li>
-					<li><a href="/401k-calculator">401(k) Calculator</a> — Model employer match and retirement projections</li>
-					<li><a href="/auto-loan-calculator">Auto Loan Calculator</a> — Calculate monthly car payments</li>
-					<li><a href="/credit-card-payoff-calculator">Credit Card Payoff Calculator</a> — Build a payoff strategy</li>
-				</ul>
-				<h2>Learn</h2>
-				<ul>
-					<li><a href="/blog">Financial Guides & Articles</a></li>
-					<li><a href="/about">About Finovly</a></li>
-					<li><a href="/contact">Contact Us</a></li>
-				</ul>
-				<p>Please enable JavaScript for the best experience.</p>
-			</div>
-		</noscript>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
+</head>
+
+<body>
+	<noscript>
+		<div
+			style="max-width:800px;margin:40px auto;padding:20px;font-family:system-ui,sans-serif;color:#e0e0e0;background:#0d0d0d;">
+			<h1>Finovly — Free Immigrant Finance Calculators</h1>
+			<p>Finovly provides free financial tools for immigrants and visa holders navigating the US financial system.
+				No sign-up required.</p>
+			<h2>Our Calculators</h2>
+			<ul>
+				<li><a href="/substantial-presence-test-calculator">Substantial Presence Test Calculator</a> — Determine
+					your IRS tax residency status</li>
+				<li><a href="/h1b-tax-calculator">H1B Tax Estimator</a> — Estimate federal, state, and FICA taxes on an
+					H1B visa</li>
+				<li><a href="/f1-opt-tax-calculator">F1 OPT Tax Calculator</a> — Tax estimates for F1 students on
+					OPT/CPT</li>
+				<li><a href="/remittance-fee-calculator">Remittance Fee Calculator</a> — Compare Wise, Remitly, and
+					Western Union fees</li>
+			</ul>
+			<h2>Learn</h2>
+			<ul>
+				<li><a href="/blog">Financial Guides &amp; Articles</a></li>
+				<li><a href="/about">About Finovly</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<p>Please enable JavaScript for the best experience.</p>
+		</div>
+	</noscript>
+	<div id="root"></div>
+	<script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

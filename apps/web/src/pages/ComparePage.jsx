@@ -7,15 +7,16 @@ import Footer from '@/components/Footer.jsx';
 import ComparisonTable from '@/components/ComparisonTable.jsx';
 
 function ComparePage() {
-  const savingsAccounts = [
-    { name: 'Ally Bank High Yield', featureValue: '4.25%', featureLabel: 'APY', details: ['$0 minimum balance', 'No monthly fees', 'FDIC Insured'], bestPick: true },
-    { name: 'Marcus by Goldman Sachs', featureValue: '4.40%', featureLabel: 'APY', details: ['$0 minimum balance', 'No monthly fees', 'Same-day transfers'], bestPick: false },
-    { name: 'Discover Online Savings', featureValue: '4.25%', featureLabel: 'APY', details: ['$0 minimum balance', 'No monthly fees', 'Large ATM network'], bestPick: false },
+  const bankAccounts = [
+    { name: 'Chase College Checking', featureValue: '$0', featureLabel: 'Monthly Fee', details: ['Ages 17-24 (waived)', 'No SSN required in-branch', 'Large branch network'], bestPick: true },
+    { name: 'Bank of America Advantage', featureValue: '$0', featureLabel: 'Monthly Fee', details: ['Under 25 (waived)', 'No SSN required in-branch', 'Zelle integration'], bestPick: false },
+    { name: 'Sable / Revolut / Fintechs', featureValue: '$0', featureLabel: 'Monthly Fee', details: ['Open with passport/visa', 'No SSN required online', 'Free foreign transactions'], bestPick: false },
   ];
 
   const creditCards = [
-    { name: 'Chase Freedom Unlimited', featureValue: '1.5%', featureLabel: 'Cash Back', details: ['$0 Annual Fee', '0% Intro APR for 15 months', 'Bonus on travel'], bestPick: true },
-    { name: 'Citi Double Cash', featureValue: '2.0%', featureLabel: 'Cash Back', details: ['$0 Annual Fee', '1% on purchase, 1% on payment', 'No category tracking'], bestPick: false },
+    { name: 'Deserve Edu Mastercard', featureValue: '1%', featureLabel: 'Cash Back', details: ['No SSN required', '$0 Annual Fee', '1 yr Amazon Prime Student'], bestPick: true },
+    { name: 'Capital One Platinum Secured', featureValue: '$200', featureLabel: 'Min Deposit', details: ['ITIN accepted', '$0 Annual Fee', 'Builds credit history'], bestPick: false },
+    { name: 'Discover it Student Cash Back', featureValue: '5%', featureLabel: 'Cash Back', details: ['SSN usually required', '$0 Annual Fee', 'Good grades reward'], bestPick: false },
   ];
 
   return (
@@ -29,11 +30,11 @@ function ComparePage() {
         <meta property="og:title" content="Compare Financial Products | Finovly" />
         <meta property="og:description" content="Compare the best savings accounts, credit cards, and investment platforms side-by-side." />
         <meta property="og:url" content="https://finovly.com/compare" />
-        <meta property="og:image" content="https://finovly.com/images/compare-og.png" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Compare Financial Products | Finovly" />
         <meta name="twitter:description" content="Compare the best savings accounts, credit cards, and investment platforms side-by-side." />
-        <meta name="twitter:image" content="https://finovly.com/images/compare-og.png" />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
         <script type="application/ld+json">{`{
           "@context": "https://schema.org",
           "@type": "WebPage",
@@ -60,12 +61,12 @@ function ComparePage() {
 
             <div className="space-y-12">
               <section>
-                <h2 className="text-[28px] font-bold text-foreground mb-6">Best High-Yield Savings Accounts</h2>
-                <ComparisonTable products={savingsAccounts} />
+                <h2 className="text-[28px] font-bold text-foreground mb-6">Non-Resident Friendly Checking Accounts</h2>
+                <ComparisonTable products={bankAccounts} />
               </section>
 
               <section>
-                <h2 className="text-[28px] font-bold text-foreground mb-6">Best Cash Back Credit Cards</h2>
+                <h2 className="text-[28px] font-bold text-foreground mb-6">Immigrant-Friendly Credit Cards (No SSN)</h2>
                 <ComparisonTable products={creditCards} />
               </section>
             </div>

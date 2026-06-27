@@ -17,6 +17,11 @@ function TermsOfServicePage() {
         <meta property="og:title" content="Terms of Service | Finovly" />
         <meta property="og:description" content="Read the Terms of Service and user agreements for using Finovly's financial tools and calculators." />
         <meta property="og:url" content="https://finovly.com/terms" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms of Service | Finovly" />
+        <meta name="twitter:description" content="Read the Terms of Service and user agreements for using Finovly's financial tools and calculators." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background grain-overlay">

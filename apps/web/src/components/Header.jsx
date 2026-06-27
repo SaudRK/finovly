@@ -24,15 +24,10 @@ function Header() {
   useEffect(() => { setMobileMenuOpen(false); }, [location.pathname]);
 
   const calculators = [
-    { name: 'Compound Interest', path: '/compound-interest-calculator' },
-    { name: 'Mortgage', path: '/mortgage-calculator' },
-    { name: 'Loan Comparison', path: '/loan-comparison-calculator' },
-    { name: 'Salary & Tax', path: '/salary-tax-calculator' },
-    { name: 'Investment', path: '/investment-calculator' },
-    { name: 'Retirement', path: '/retirement-calculator' },
-    { name: '401(k)', path: '/401k-calculator' },
-    { name: 'Auto Loan', path: '/auto-loan-calculator' },
-    { name: 'Credit Card Payoff', path: '/credit-card-payoff-calculator' },
+    { name: 'Substantial Presence Test', path: '/substantial-presence-test-calculator' },
+    { name: 'H1B Tax Estimator', path: '/h1b-tax-calculator' },
+    { name: 'F1 OPT Tax Calculator', path: '/f1-opt-tax-calculator' },
+    { name: 'Remittance Fee Calculator', path: '/remittance-fee-calculator' },
   ];
 
   const navLinks = [
@@ -48,7 +43,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           <Link to="/" className="flex items-center" aria-label="Finovly Home">
-            <img src="/finovly-logo-dark.svg" alt="Finovly – Free Financial Calculators and Money Tools" className="h-7 w-auto" loading="eager" width="120" height="28" />
+            <img src="/finovly-logo-dark.svg" alt="Finovly – Immigrant Finance Calculators and Tools" className="h-7 w-auto" loading="eager" width="120" height="28" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-0.5" aria-label="Main navigation">
@@ -56,7 +51,7 @@ function Header() {
               <DropdownMenuTrigger className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-[13px] font-medium transition-all outline-none ${isCalcActive ? 'text-white bg-white/8' : 'text-[hsl(var(--header-link))] hover:text-[hsl(var(--header-link-hover))]'}`}>
                 Tools <ChevronDown className="w-3 h-3 opacity-50" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-52 bg-[hsl(var(--header-bg))] border-white/8 text-white shadow-2xl rounded-xl p-1" sideOffset={8}>
+              <DropdownMenuContent align="start" className="w-56 bg-[hsl(var(--header-bg))] border-white/8 text-white shadow-2xl rounded-xl p-1" sideOffset={8}>
                 <DropdownMenuItem asChild className="focus:bg-white/8 focus:text-white cursor-pointer rounded-lg text-[13px]">
                   <Link to="/calculators" className="w-full font-semibold border-b border-white/8 pb-2 mb-1">All Tools</Link>
                 </DropdownMenuItem>

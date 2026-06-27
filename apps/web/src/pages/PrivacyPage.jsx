@@ -17,6 +17,11 @@ function PrivacyPage() {
         <meta property="og:title" content="Privacy Policy | Finovly" />
         <meta property="og:description" content="Learn how Finovly collects, uses, and protects your personal data and information." />
         <meta property="og:url" content="https://finovly.com/privacy" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy | Finovly" />
+        <meta name="twitter:description" content="Learn how Finovly collects, uses, and protects your personal data and information." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background grain-overlay">

@@ -31,24 +31,24 @@ function BlogPage() {
   return (
     <>
       <Helmet>
-        <title>Personal Finance Blog & Guides | Finovly</title>
-        <meta name="description" content="Expert articles on investing, budgeting, credit, and retirement to help you master your money." />
+        <title>Immigrant Finance Blog & Guides | H1B, F1, Visa Tips | Finovly</title>
+        <meta name="description" content="Financial guides for immigrants and visa holders in the US. Topics cover H1B taxes, F1 student finance, remittance, US banking, and more." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/blog" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Personal Finance Blog & Guides | Finovly" />
-        <meta property="og:description" content="Expert articles on investing, budgeting, credit, and retirement to help you master your money." />
+        <meta property="og:title" content="Immigrant Finance Blog & Guides | Finovly" />
+        <meta property="og:description" content="Financial guides for immigrants and visa holders in the US. Topics cover H1B taxes, F1 student finance, remittance, US banking, and more." />
         <meta property="og:url" content="https://finovly.com/blog" />
-        <meta property="og:image" content="https://finovly.com/images/blog-og.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Personal Finance Blog & Guides | Finovly" />
-        <meta name="twitter:description" content="Expert articles on investing, budgeting, credit, and retirement to help you master your money." />
-        <meta name="twitter:image" content="https://finovly.com/images/blog-og.png" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Immigrant Finance Blog & Guides | Finovly" />
+        <meta name="twitter:description" content="Financial guides for immigrants and visa holders in the US." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
         <script type="application/ld+json">{`{
           "@context": "https://schema.org",
           "@type": "Blog",
           "name": "Finovly Blog",
-          "description": "Expert articles on investing, budgeting, credit, and retirement to help you master your money.",
+          "description": "Financial guides for immigrants and visa holders navigating the US financial system.",
           "url": "https://finovly.com/blog"
         }`}</script>
       </Helmet>
@@ -64,7 +64,7 @@ function BlogPage() {
             <div className="mb-12 text-center md:text-left">
               <h1 className="text-[40px] md:text-[48px] font-extrabold text-foreground mb-4 tracking-tight">Financial Guides</h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                Expert advice on investing, budgeting, and mastering your money.
+                Expert advice on immigrant finance, US taxes, banking, and more.
               </p>
             </div>
 

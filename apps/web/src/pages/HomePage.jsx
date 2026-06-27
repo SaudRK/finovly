@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
-import { Calculator, Home, Scale, DollarSign, ChevronRight, TrendingUp, BarChart3, CreditCard, Car, PiggyBank, ArrowRight, ArrowUpRight, Shield, Zap, BookOpen, Star, MousePointer2 } from 'lucide-react';
+import { Globe, Send, GraduationCap, Briefcase, ChevronRight, ArrowRight, ArrowUpRight, Shield, Zap, BookOpen, Star, MousePointer2 } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import TrustBar from '@/components/TrustBar.jsx';
@@ -51,7 +51,7 @@ function MagneticLink({ to, children, className = '' }) {
 
 /* ── Ticker strip ── */
 function TickerStrip() {
-  const items = ['Compound Interest', 'Mortgage', 'Loan Comparison', 'Salary & Tax', '401(k)', 'Retirement', 'Investment', 'Credit Card Payoff', 'Auto Loan'];
+  const items = ['H1B Tax Calculator', 'Substantial Presence Test', 'F1 OPT Tax Calculator', 'Remittance Fee Calculator', 'H1B Tax Calculator', 'Substantial Presence Test', 'F1 OPT Tax Calculator', 'Remittance Fee Calculator'];
   const doubled = [...items, ...items];
   return (
     <div className="overflow-hidden border-y border-border py-3 bg-card">
@@ -88,15 +88,10 @@ function HomePage() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const calculators = [
-    { icon: TrendingUp, title: 'Compound Interest', desc: 'Project wealth growth with compounding returns over any period.', link: '/compound-interest-calculator', tag: 'Most Popular' },
-    { icon: Home, title: 'Mortgage', desc: 'Calculate monthly payments, total interest, and amortization.', link: '/mortgage-calculator', tag: 'Essential' },
-    { icon: Scale, title: 'Loan Comparison', desc: 'Compare rates, terms, and total cost across multiple loans.', link: '/loan-comparison-calculator' },
-    { icon: DollarSign, title: 'Salary & Tax', desc: 'See your exact take-home pay after all federal and state deductions.', link: '/salary-tax-calculator' },
-    { icon: PiggyBank, title: '401(k)', desc: 'Model employer match, contribution limits, and retirement projections.', link: '/401k-calculator' },
-    { icon: BarChart3, title: 'Investment', desc: 'Simulate portfolio growth with varying allocations and timelines.', link: '/investment-calculator' },
-    { icon: Calculator, title: 'Retirement', desc: 'Determine if your savings rate meets your retirement target.', link: '/retirement-calculator' },
-    { icon: CreditCard, title: 'Credit Card Payoff', desc: 'Build a payoff plan and see how extra payments save you money.', link: '/credit-card-payoff-calculator' },
-    { icon: Car, title: 'Auto Loan', desc: 'Calculate monthly car payments and total financing cost.', link: '/auto-loan-calculator' },
+    { icon: Globe, title: 'Substantial Presence Test', desc: 'Check if the IRS considers you a U.S. tax resident using the official 183-day weighted formula.', link: '/substantial-presence-test-calculator', tag: 'Most Used' },
+    { icon: Briefcase, title: 'H1B Tax Estimator', desc: 'Estimate your federal, state, and FICA taxes as an H1B visa holder. Includes 401(k) deductions.', link: '/h1b-tax-calculator', tag: 'Popular' },
+    { icon: GraduationCap, title: 'F1 OPT Tax Calculator', desc: 'Tax estimates for F1 students on OPT or CPT. Includes FICA exemption and treaty benefits.', link: '/f1-opt-tax-calculator' },
+    { icon: Send, title: 'Remittance Fee Calculator', desc: 'Compare Wise, Remitly, and Western Union fees and exchange rates to find the cheapest transfer.', link: '/remittance-fee-calculator' },
   ];
 
   const recentPosts = blogPosts.slice(0, 3);
@@ -111,21 +106,23 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Free Financial Calculators & Money Tools | Finovly</title>
-        <meta name="description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more. Trusted by 150K+ monthly users. No sign-up required." />
+        <title>Finance Made Simple for Immigrants | Finovly</title>
+        <meta name="description" content="Free financial calculators for immigrants: Substantial Presence Test, H1B Tax Estimator, F1 OPT Tax Calculator, and Remittance Fee comparisons." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Free Financial Calculators & Money Tools | Finovly" />
-        <meta property="og:description" content="Free financial calculators for compound interest, mortgages, loans, investments, and more." />
+        <meta property="og:title" content="Free Immigrant Finance Calculators | Finovly" />
+        <meta property="og:description" content="Free financial tools for immigrants navigating the US financial system — H1B taxes, F1 OPT taxes, Substantial Presence Test, and remittance fee comparison." />
         <meta property="og:url" content="https://finovly.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:image" content="https://finovly.com/og-image.png" />
-        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Finance Made Simple for Immigrants | Finovly" />
+        <meta name="twitter:description" content="Free financial calculators for immigrants: Substantial Presence Test, H1B Tax Estimator, F1 OPT Tax Calculator, and Remittance Fee comparisons." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
         <script type="application/ld+json">{`{
           "@context":"https://schema.org","@type":"Organization","name":"Finovly","url":"https://finovly.com",
-          "logo":"https://finovly.com/finovly-icon.svg",
-          "description":"Free financial calculators and expert guides for smarter money decisions.",
+          "logo":"https://finovly.com/finovly-logo-dark.svg",
+          "description":"Free financial calculators for immigrants and visa holders in the United States — Substantial Presence Test, H1B Tax, F1 OPT Tax, and Remittance Fee tools.",
           "contactPoint":{"@type":"ContactPoint","email":"hello@finovly.com","contactType":"customer support"}
         }`}</script>
         <script type="application/ld+json">{`{
@@ -177,9 +174,9 @@ function HomePage() {
                 className="text-[42px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-extrabold text-white leading-[0.95] mb-6"
                 style={{ letterSpacing: '-0.05em' }}
               >
-                Financial tools<br />
-                <span className="gradient-text-accent">that respect</span><br />
-                your intelligence
+                Finance made simple<br />
+                <span className="gradient-text-accent">for new</span><br />
+                Americans
               </motion.h1>
 
               <motion.p
@@ -189,7 +186,7 @@ function HomePage() {
                 className="text-base md:text-lg mb-10 max-w-lg mx-auto leading-relaxed"
                 style={{ color: 'hsl(0 0% 55%)' }}
               >
-                No sign-ups. No paywalls. No selling your data. Just precise calculators and honest financial guidance.
+                Calculators, guides, and tools for immigrants navigating the US financial system — banking, taxes, and sending money home.
               </motion.p>
 
               <motion.div
@@ -214,9 +211,9 @@ function HomePage() {
                 className="mt-16 flex items-center justify-center gap-6 text-[11px] font-mono uppercase tracking-wider"
                 style={{ color: 'hsl(0 0% 35%)' }}
               >
-                <span>9 free tools</span>
+                <span>4 free tools</span>
                 <span className="w-1 h-1 rounded-full bg-current" />
-                <span>No account needed</span>
+                <span>Built for immigrants</span>
                 <span className="w-1 h-1 rounded-full bg-current" />
                 <LiveClock />
               </motion.div>
@@ -245,21 +242,18 @@ function HomePage() {
             <div className="max-w-7xl mx-auto">
               <Reveal>
                 <div className="mb-14">
-                  <span className="section-label">// tools</span>
+                  <span className="section-label">// tools for immigrants</span>
                   <h2 id="tools-heading" className="section-title">Every calculator you<br className="hidden md:block" /> actually need</h2>
                 </div>
               </Reveal>
 
-              {/* Asymmetric bento grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {calculators.map((calc, idx) => {
-                  // Vary grid sizes: first 2 are large, rest normal
                   const isLarge = idx < 2;
-                  const isMedium = idx === 2 || idx === 5;
                   return (
-                    <Reveal key={idx} delay={idx * 0.05} className={`${isLarge ? 'lg:row-span-2' : ''} ${isMedium ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+                    <Reveal key={idx} delay={idx * 0.08}>
                       <Link to={calc.link} className="block group h-full">
-                        <div className={`card-bento h-full flex flex-col ${isLarge ? 'min-h-[280px]' : 'min-h-[180px]'}`}>
+                        <div className={`card-bento h-full flex flex-col ${isLarge ? 'min-h-[240px]' : 'min-h-[180px]'}`}>
                           {calc.tag && <span className="badge-accent mb-3">{calc.tag}</span>}
                           <div className="flex items-start justify-between mb-auto">
                             <div className="w-10 h-10 rounded-xl border border-border flex items-center justify-center group-hover:border-[hsl(var(--accent)/0.4)] group-hover:bg-[hsl(var(--accent)/0.06)] transition-all duration-500">
@@ -285,9 +279,9 @@ function HomePage() {
             <div className="max-w-7xl mx-auto px-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
                 {[
-                  { value: 2, suffix: 'M+', label: 'Calculations performed' },
+                  { value: 45, suffix: 'M+', label: 'Immigrants in the US' },
                   { value: 150, suffix: 'K', label: 'Monthly active users' },
-                  { value: 9, suffix: '', label: 'Free precision tools' },
+                  { value: 4, suffix: '', label: 'Free precision tools' },
                   { value: 4.8, suffix: '/5', label: 'Average user rating', decimals: 1 },
                 ].map((stat, i) => (
                   <Reveal key={i} delay={i * 0.1}>

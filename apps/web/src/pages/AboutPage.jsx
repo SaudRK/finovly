@@ -14,10 +14,15 @@ function AboutPage() {
         <meta name="description" content="Learn about Finovly's mission to help people make confident financial decisions with free, unbiased tools and guides." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/about" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="About Finovly" />
+        <meta property="og:description" content="Learn about Finovly's mission to help people make confident financial decisions with free, unbiased tools and guides." />
         <meta property="og:url" content="https://finovly.com/about" />
-        <meta property="og:image" content="https://finovly.com/og-image.png" />
-        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About Finovly" />
+        <meta name="twitter:description" content="Learn about Finovly's mission to help people make confident financial decisions with free, unbiased tools and guides." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"AboutPage","name":"About Finovly","url":"https://finovly.com/about"}`}</script>
       </Helmet>
 
@@ -60,12 +65,13 @@ function AboutPage() {
               </section>
 
               <section className="card-bento">
-                <h2 className="text-lg font-bold text-foreground mb-3">Popular tools</h2>
+                <h2 className="text-lg font-bold text-foreground mb-3">Our tools</h2>
                 <ul className="space-y-2">
                   {[
-                    { to: '/compound-interest-calculator', label: 'Compound Interest Calculator', desc: 'for long-term investing' },
-                    { to: '/mortgage-calculator', label: 'Mortgage Calculator', desc: 'for home buying' },
-                    { to: '/blog/start-investing-100', label: 'How to Start Investing with $100', desc: 'for beginners' },
+                    { to: '/substantial-presence-test-calculator', label: 'Substantial Presence Test Calculator', desc: 'for H1B, L1, and all visa holders' },
+                    { to: '/h1b-tax-calculator', label: 'H1B Tax Estimator', desc: 'federal, state, and FICA taxes' },
+                    { to: '/f1-opt-tax-calculator', label: 'F1 OPT Tax Calculator', desc: 'for international students on OPT/CPT' },
+                    { to: '/remittance-fee-calculator', label: 'Remittance Fee Calculator', desc: 'compare Wise, Remitly, and more' },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-2 flex-shrink-0" />

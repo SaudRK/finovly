@@ -113,13 +113,13 @@ function NotFoundPage() {
                transition={{ duration: 0.6, delay: 0.6 }}
                className="mt-16 pt-8 border-t border-white/5"
             >
-               <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-4">Popular Tools</p>
+               <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-4">Immigrant Finance Tools</p>
                <div className="flex flex-wrap justify-center gap-3">
-                 <Link to="/compound-interest-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">Compound Interest</Link>
+                 <Link to="/substantial-presence-test-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">Substantial Presence Test</Link>
                  <span className="text-white/20">•</span>
-                 <Link to="/mortgage-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">Mortgage</Link>
+                 <Link to="/h1b-tax-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">H1B Tax Estimator</Link>
                  <span className="text-white/20">•</span>
-                 <Link to="/salary-tax-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">Salary & Tax</Link>
+                 <Link to="/remittance-fee-calculator" className="text-sm text-white/50 hover:text-white transition-colors hover:underline decoration-white/20 underline-offset-4">Remittance Calculator</Link>
                </div>
             </motion.div>
           </div>

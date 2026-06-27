@@ -9,7 +9,17 @@ function DisclaimerPage() {
   return (
     <>
       <Helmet>
-        <title>Disclaimer | SmartMoneyHub</title>
+        <title>Legal Disclaimer | Finovly</title>
+        <meta name="description" content="Read Finovly's legal disclaimer. Our tools and content are for informational purposes and do not constitute financial advice." />
+        <meta name="robots" content="noindex,follow" />
+        <link rel="canonical" href="https://finovly.com/disclaimer" />
+        <meta property="og:title" content="Legal Disclaimer | Finovly" />
+        <meta property="og:description" content="Read Finovly's legal disclaimer. Our tools and content are for informational purposes and do not constitute financial advice." />
+        <meta property="og:url" content="https://finovly.com/disclaimer" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
       </Helmet>
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -19,7 +29,7 @@ function DisclaimerPage() {
             <h1 className="text-4xl font-bold mb-6">Disclaimer</h1>
             <div className="bg-destructive/10 border border-destructive/20 p-4 rounded-lg mb-8">
               <p className="text-destructive font-semibold m-0">Not Financial Advice</p>
-              <p className="text-sm mt-2 mb-0">The content on SmartMoneyHub is for informational and educational purposes only and should not be construed as professional financial advice.</p>
+              <p className="text-sm mt-2 mb-0">The content on Finovly is for informational and educational purposes only and should not be construed as professional financial advice.</p>
             </div>
             <p>While we strive to provide accurate and up-to-date information, financial markets and products change rapidly. We make no warranties regarding the accuracy or completeness of the information provided.</p>
             <p>Always consult with a certified financial planner, tax professional, or legal counsel before making significant financial decisions.</p>

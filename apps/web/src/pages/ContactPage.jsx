@@ -14,10 +14,15 @@ function ContactPage() {
         <meta name="description" content="Contact Finovly for editorial corrections, partnership requests, and general questions about our financial tools." />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://finovly.com/contact" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact Finovly" />
+        <meta property="og:description" content="Contact Finovly for editorial corrections, partnership requests, and general questions about our financial tools." />
         <meta property="og:url" content="https://finovly.com/contact" />
-        <meta property="og:image" content="https://finovly.com/og-image.png" />
-        <meta name="twitter:image" content="https://finovly.com/og-image.png" />
+        <meta property="og:image" content="https://finovly.com/finovly-logo-dark.svg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact Finovly" />
+        <meta name="twitter:description" content="Contact Finovly for editorial corrections, partnership requests, and general questions about our financial tools." />
+        <meta name="twitter:image" content="https://finovly.com/finovly-logo-dark.svg" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Finovly","url":"https://finovly.com/contact"}`}</script>
       </Helmet>
 

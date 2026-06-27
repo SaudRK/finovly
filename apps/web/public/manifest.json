@@ -1,7 +1,7 @@
 {
   "name": "Finovly",
   "short_name": "Finovly",
-  "description": "Free financial calculators and expert money guides. No sign-up required.",
+  "description": "Free financial calculators and expert money guides for immigrants navigating the US financial system.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0d0d",

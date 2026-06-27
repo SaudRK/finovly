@@ -7,19 +7,12 @@ function Footer() {
   const y = new Date().getFullYear();
 
   const cols = [
-    { title: 'Tools', links: [
-      { name: 'Compound Interest', path: '/compound-interest-calculator' },
-      { name: 'Mortgage', path: '/mortgage-calculator' },
-      { name: 'Loan Comparison', path: '/loan-comparison-calculator' },
-      { name: 'Salary & Tax', path: '/salary-tax-calculator' },
-      { name: 'All Calculators', path: '/calculators' },
-    ]},
-    { title: 'More', links: [
-      { name: 'Investment', path: '/investment-calculator' },
-      { name: 'Retirement', path: '/retirement-calculator' },
-      { name: '401(k)', path: '/401k-calculator' },
-      { name: 'Auto Loan', path: '/auto-loan-calculator' },
-      { name: 'Credit Card', path: '/credit-card-payoff-calculator' },
+    { title: 'Calculators', links: [
+      { name: 'Substantial Presence Test', path: '/substantial-presence-test-calculator' },
+      { name: 'H1B Tax Estimator', path: '/h1b-tax-calculator' },
+      { name: 'F1 OPT Tax', path: '/f1-opt-tax-calculator' },
+      { name: 'Remittance Fee Calculator', path: '/remittance-fee-calculator' },
+      { name: 'All Tools', path: '/calculators' },
     ]},
     { title: 'Learn', links: [
       { name: 'Guides', path: '/blog' },
@@ -38,10 +31,10 @@ function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-14">
           <div className="col-span-2 md:col-span-1">
             <Link to="/">
-              <img src="/finovly-logo-dark.svg" alt="Finovly – Free Financial Calculators" className="h-7 w-auto mb-4" loading="lazy" />
+              <img src="/finovly-logo-dark.svg" alt="Finovly – Immigrant Finance Calculators" className="h-7 w-auto mb-4" loading="lazy" />
             </Link>
             <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">
-              Free financial tools built with precision. No accounts. No data collection.
+              Free financial tools for immigrants navigating the US financial system.
             </p>
           </div>
           {cols.map(col => (
